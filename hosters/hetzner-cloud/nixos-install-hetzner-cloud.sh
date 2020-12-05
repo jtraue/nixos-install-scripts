@@ -16,7 +16,7 @@
 # 3. Run on the server:
 #
 #       # Replace this URL by your own that has your pubkey in
-#       curl -L https://raw.githubusercontent.com/nix-community/nixos-install-scripts/master/hosters/hetzner-cloud/nixos-install-hetzner-cloud.sh | sudo bash
+#       curl -L https://raw.githubusercontent.com/jtraue/nixos-install-scripts/master/hosters/hetzner-cloud/nixos-install-hetzner-cloud.sh | sudo bash
 # 4. Unmount the ISO image from the Hetzner Cloud GUI.
 # 5. Reboot.
 #
@@ -64,7 +64,9 @@ echo '
 
   # Replace this by your SSH pubkey
   users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtwCIGPYJlD2eeUtxngmT+4yR7BMlK0F5kzj+84uHsxxsy+PXFrP/tScCpwmuoiEYNv/9WKnPJJfCA9XlIDr6cla1MLpaW6eg672TRYMmKzH6SLlkg+kyDmPxSIJw+KdKfnPYyva+Y/VocACYJo0voabUeLAVgtSKGz/AFzccjfOR0GmFO911zjAaR+jFb9M7t7dveNVKm9KbuBfu3giMgGg3/mKz1TKY8yk2ZOxpT5CllBb+B5BcEf+7IGNvNxr1Z0zz5cFXQ3LyBIZklnC/OaQCnD78BSiyPTkIXcmBFal2TaFwTDvki6PuCRpJy+dU1fDdgWLql97D0SVnjmmomw=="
+    "ssh-rsa
+    AAAAB3NzaC1yc2EAAAADAQABAAACAQC3aaJrBJCJQIQ0nqU9qxcrqSm9aKMcOo4kc7DG66RtzVvHFtFhuRPBWxxeF4Qz2+syFvjtXf1VjuiAFDx0PH29jAbjHZct8EjEaIPcczDxz2xR/zREqgjUKzk5mvK8vv01LHHmJc5wnc5G8WhqZDfi+MG5sfQ/noGe6AartulB0lqP3dhZNSXM+7rI+R51HwKtrUI6ryIcqrDyLliCx35k/1K0gZhDpmjD1EVkxHuHg8pbarGTTw+vZYqMO3GYrDMmGslFx65GpAujj++fOenzpAy4q5Uc5mxiYXG/DEwxr+rsaLKdCjSwSApVcdRaOQX2+FN2MQoxpPXzaM2Ynf3/AcbYqR7XlxcMAW1Wy4xcJXeXyDryu1NzyenupojbkCqo1+xPPh2cUDvEpZ5Lk5U5x9cl2vhrSVqqfQCdbhSfcq8aReNvGPo6e+PkxaMorbXOAeylVpPxhH+VMWD9tGUMK6kjOOavi86vy8L4i/C2rsyiGUNlsv1PxY7ek6jj3Rk3+hHbu5dNk/IUfZDHksVvrlMLwm/Et8cW8HqwUTQ+qTIs05ZK0+rnv5PRrKxUKPuwCDN+ngU5yyY7T3D/dZNWTVHU/PLmSCVL+QvWKv877qX5QDwrfoRPzTpIYWdEbfy5cq9dqxVmpiAVBqoDbJyd23wQ8MJups18lHZu8kkxeQ==
+    cardno:000607407593"
   ];
 }
 ' >> /mnt/etc/nixos/configuration.nix
